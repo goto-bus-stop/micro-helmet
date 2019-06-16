@@ -51,7 +51,7 @@ module.exports = async (req, res) => {
 Wrap a handler function. This adds helmet's headers before calling your handler.
 `opts` can be used to configure specific headers. It is passed through to [helmet](https://github.com/helmetjs/helmet#how-it-works).
 
-### `helmet.addHeaders(req, res, opts={})`
+### `await helmet.addHeaders(req, res, opts={})`
 
 Add helmet's headers.
 `opts` can be used to configure specific headers. It is passed through to [helmet](https://github.com/helmetjs/helmet#how-it-works).
