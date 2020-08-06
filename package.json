@@ -33,6 +33,6 @@
     "test": "standard && node test"
   },
   "dependencies": {
-    "helmet": "^3.18.0"
+    "helmet": "^4.0.0"
   }
 }
