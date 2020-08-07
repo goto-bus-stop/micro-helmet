@@ -1,6 +1,8 @@
 # micro-helmet
 
-security headers for micro
+security headers for micro using [helmet](https://github.com/helmetjs/helmet)
+
+requires node.js 10+
 
 [Install](#install) - [Usage](#usage) - [License: Apache-2.0](#license)
 
