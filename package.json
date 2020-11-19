@@ -30,7 +30,8 @@
     "url": "https://github.com/goto-bus-stop/micro-helmet.git"
   },
   "scripts": {
-    "test": "standard && node test"
+    "lint": "standard",
+    "test": "node test"
   },
   "dependencies": {
     "helmet": "^4.0.0"

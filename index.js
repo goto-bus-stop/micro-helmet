@@ -1,7 +1,7 @@
-var helmet = require('helmet')
+const helmet = require('helmet')
 
 function microHelmetHandler (req, res, opts) {
-  var addHeaders = helmet(opts)
+  const addHeaders = helmet(opts)
   return new Promise(function (resolve, reject) {
     addHeaders(req, res, function (err) {
       if (err) reject(err)
@@ -11,7 +11,7 @@ function microHelmetHandler (req, res, opts) {
 }
 
 function microHelmet (handler, opts) {
-  var addHeaders = helmet(opts)
+  const addHeaders = helmet(opts)
 
   return function (req, res) {
     return new Promise(function (resolve, reject) {
