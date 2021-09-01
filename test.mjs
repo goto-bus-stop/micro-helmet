@@ -1,7 +1,7 @@
-var tape = require('tape')
-var fetch = require('node-fetch')
-var micro = require('micro')
-var helmet = require('.')
+import tape from 'tape'
+import fetch from 'node-fetch'
+import micro from 'micro'
+import helmet, { addHeaders } from 'micro-helmet'
 
 tape('adds security headers', function (t) {
   t.plan(3)
@@ -43,7 +43,7 @@ tape('use as utility', function (t) {
   t.plan(3)
 
   var server = micro(function (req, res) {
-    return helmet.addHeaders(req, res, {
+    return addHeaders(req, res, {
       frameguard: { action: 'deny' }
     }).then(function () {
       return { ok: true }

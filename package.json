@@ -25,13 +25,20 @@
   ],
   "license": "Apache-2.0",
   "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/goto-bus-stop/micro-helmet.git"
   },
   "scripts": {
     "lint": "standard",
-    "test": "node test"
+    "test": "node test.mjs"
   },
   "dependencies": {
     "helmet": "^4.0.0"
