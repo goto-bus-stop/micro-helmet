@@ -7,7 +7,7 @@
     "url": "https://github.com/goto-bus-stop/micro-helmet/issues"
   },
   "devDependencies": {
-    "micro": "^9.3.4",
+    "micro": "^10.0.1",
     "node-fetch": "^3.0.0",
     "standard": "^16.0.3",
     "tape": "^5.0.1"
