@@ -9,7 +9,7 @@
   "devDependencies": {
     "micro": "^9.3.4",
     "node-fetch": "^3.0.0",
-    "standard": "^16.0.3",
+    "standard": "^17.1.0",
     "tape": "^5.0.1"
   },
   "homepage": "https://github.com/goto-bus-stop/micro-helmet",
